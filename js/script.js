@@ -85,7 +85,7 @@ function getData(data){
                                 <div class="modal-body">
                                     <div class="row">
                                         <div class="col-md-5"></div>
-                                        <div class="col-md-4"><img src="/assets/edit3.png" class="center"></div>
+                                        <div class="col-md-4"><img src="/assets/editSuccess.png" class="center"></div>
                                         <div class="col-md-3"></div>
                                     </div>
                                     <br/>
@@ -108,7 +108,7 @@ function getData(data){
                                 <div class="modal-body">
                                     <div class="row">
                                         <div class="col-md-5"></div>
-                                        <div class="col-md-4"><img src="/assets/delete2.png" class="center"></div>
+                                        <div class="col-md-4"><img src="/assets/deleteSuccess.png" class="center"></div>
                                         <div class="col-md-3"></div>
                                     </div>
                                     <br/>
