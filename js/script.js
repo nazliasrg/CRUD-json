@@ -66,7 +66,7 @@ function getData(data){
                                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                     </div>
                                     <div class="modal-body">
-                                        <p class="content">Are you sure to delete data from <b>${element.name}</b> ?</p>
+                                        <p class="content">Are you sure delete <b>${element.name}</b>'s data?</p>
                                     </div>
                                     <div class="modal-footer">
                                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
