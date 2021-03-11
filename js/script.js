@@ -89,10 +89,8 @@ function getData(data){
                                         <div class="col-md-3"></div>
                                     </div>
                                     <br/>
-                                    <div class="row">
-                                        <div class="col-md-3"></div>
-                                        <div class="col-md-6"><p class="content">Data <b>${element.name}</b> updated!</p></div>
-                                        <div class="col-md-3"></div>
+                                    <div class="row text-center">
+                                        <p class="content"><b>${element.name}</b>'s data updated!</p>
                                     </div>
                                 </div>
                             </div>
@@ -112,10 +110,8 @@ function getData(data){
                                         <div class="col-md-3"></div>
                                     </div>
                                     <br/>
-                                    <div class="row">
-                                        <div class="col-md-3"></div>
-                                        <div class="col-md-6"><p class="content">Data <b>${element.name}</b> deleted!</p></div>
-                                        <div class="col-md-3"></div>
+                                    <div class="row text-center">
+                                        <p class="content"><b>${element.name}</b>'s data deleted!</p>
                                     </div>
                                 </div>
                             </div>
