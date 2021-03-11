@@ -83,8 +83,17 @@ function getData(data){
                                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                 </div>
                                 <div class="modal-body">
-                                    <img src="/assets/edit3.png" class="success">
-                                    <p class="content">Data <b>${element.name}</b> updated!</p>
+                                    <div class="row">
+                                        <div class="col-md-5"></div>
+                                        <div class="col-md-4"><img src="/assets/edit3.png" class="center"></div>
+                                        <div class="col-md-3"></div>
+                                    </div>
+                                    <br/>
+                                    <div class="row">
+                                        <div class="col-md-3"></div>
+                                        <div class="col-md-6"><p class="content">Data <b>${element.name}</b> updated!</p></div>
+                                        <div class="col-md-3"></div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -97,8 +106,17 @@ function getData(data){
                                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                 </div>
                                 <div class="modal-body">
-                                    <img src="/assets/delete2.png" class="success">
-                                    <p class="content">Data <b>${element.name}</b> deleted!</p>
+                                    <div class="row">
+                                        <div class="col-md-5"></div>
+                                        <div class="col-md-4"><img src="/assets/delete2.png" class="center"></div>
+                                        <div class="col-md-3"></div>
+                                    </div>
+                                    <br/>
+                                    <div class="row">
+                                        <div class="col-md-3"></div>
+                                        <div class="col-md-6"><p class="content">Data <b>${element.name}</b> deleted!</p></div>
+                                        <div class="col-md-3"></div>
+                                    </div>
                                 </div>
                             </div>
                         </div>

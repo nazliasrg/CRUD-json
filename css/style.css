@@ -63,3 +63,7 @@
     width: 100px;
     right: 0;
 }
+.center {
+    margin: auto;
+    width: 60%;
+}
