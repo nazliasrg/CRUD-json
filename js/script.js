@@ -10,6 +10,8 @@ function getData(data){
     let output = '';
     let modalEdit = '';
     let modalDelete = '';
+    let modalEditSuccess = '';
+    let modalDeleteSuccess = '';
 
     data.forEach(element => {
         output += `<tr>
@@ -50,7 +52,7 @@ function getData(data){
                                     </div>
                                 </div>
                                 <div class="modal-footer">
-                                    <button type="submit" class="btn btn-success" data-bs-dismiss="modal">EDIT</button>
+                                    <button type="submit" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#editSuccess${element.id}" data-bs-dismiss="modal">EDIT</button>
                                 </div>
                             </div>
                         </div>
@@ -68,11 +70,40 @@ function getData(data){
                                     </div>
                                     <div class="modal-footer">
                                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
-                                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Yes</button>
+                                        <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#deleteSuccess${element.id}" data-bs-dismiss="modal">Yes</button>
                                     </div>
                                 </div>
                             </div>
                         </div>`;
+
+        modalEditSuccess += `<div class="modal fade" id="editSuccess${element.id}" data-bs-backdrop="static"     data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <img src="/assets/edit3.png" class="success">
+                                    <p class="content">Data <b>${element.name}</b> updated!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>`;
+
+        modalDeleteSuccess += `<div class="modal fade" id="deleteSuccess${element.id}" data-bs-backdrop="static"     data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <img src="/assets/delete2.png" class="success">
+                                    <p class="content">Data <b>${element.name}</b> deleted!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>`;
+                        
     });
     const bodyTable = document.getElementById('body-table')
     console.log('body table:', bodyTable);
@@ -84,5 +115,11 @@ function getData(data){
 
     const deleteModal = document.getElementById('modalDelete')
     deleteModal.innerHTML = modalDelete
+
+    const editSuccessModal = document.getElementById('modalEditSuccess')
+    editSuccessModal.innerHTML = modalEditSuccess
+
+    const deleteSuccessModal = document.getElementById('modalDeleteSuccess')
+    deleteSuccessModal.innerHTML = modalDeleteSuccess
 }
 
